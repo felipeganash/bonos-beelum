@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Slide 6 - ¡Alcanza el Nivel 2!</title>
+    
+    <!-- Preconnect for performance -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/components.css">
+    
+    <!-- Navigation metadata -->
+    <meta name="slide-number" content="6">
+    <meta name="slide-total" content="6">
+    <link rel="prev" href="slide-05.html">
+    
+    <!-- Prefetch previous slide -->
+    <link rel="prefetch" href="slide-05.html">
+</head>
+<body>
+    
+    <!-- Fullscreen Button -->
+    <button class="fullscreen-button" id="fullscreenBtn" title="Pantalla completa">
+        <span id="fullscreenIcon">⛶</span>
+    </button>
+    
+    <!-- Slide Container -->
+    <div class="slide-container">
+        <!-- Background Elements -->
+        <div class="slide-bg" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;">
+            <!-- Animated Gradient Background -->
+            <div style="
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(45deg, 
+                    rgba(253, 184, 19, 0.1), 
+                    rgba(255, 0, 161, 0.1), 
+                    rgba(0, 242, 234, 0.1),
+                    rgba(192, 192, 192, 0.1));
+                animation: gradientShift 10s ease infinite;
+            "></div>
+            
+            <!-- Celebration Confetti -->
+            <div class="confetti-container" style="position: absolute; width: 100%; height: 100%; overflow: hidden;">
+                <span class="confetti-slow" style="left: 5%; animation-delay: 0s;">🎊</span>
+                <span class="confetti-slow" style="left: 15%; animation-delay: 1s;">🎉</span>
+                <span class="confetti-slow" style="left: 25%; animation-delay: 2s;">⭐</span>
+                <span class="confetti-slow" style="left: 35%; animation-delay: 3s;">💎</span>
+                <span class="confetti-slow" style="left: 45%; animation-delay: 4s;">🏆</span>
+                <span class="confetti-slow" style="left: 55%; animation-delay: 5s;">✨</span>
+                <span class="confetti-slow" style="left: 65%; animation-delay: 6s;">👑</span>
+                <span class="confetti-slow" style="left: 75%; animation-delay: 7s;">💰</span>
+                <span class="confetti-slow" style="left: 85%; animation-delay: 8s;">🚀</span>
+                <span class="confetti-slow" style="left: 95%; animation-delay: 9s;">🎯</span>
+            </div>
+            
+            <!-- Neon Lines -->
+            <div class="neon-line gold" style="top: 20%; left: -10%; transform: rotate(25deg); animation: moveNeon 15s infinite;"></div>
+            <div class="neon-line cyan" style="top: 60%; right: -10%; transform: rotate(-25deg); animation: moveNeon 20s infinite;"></div>
+            <div class="neon-line pink" style="bottom: 30%; left: -10%; transform: rotate(-15deg); animation: moveNeon 18s infinite;"></div>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="slide-content" style="position: relative; z-index: 2; padding-top: 4rem; padding-bottom: 3rem; min-height: 100vh;">
+            
+            <!-- Main Question -->
+            <h1 class="fade-in-up" style="font-size: 4rem; line-height: 1.2; margin-bottom: 2rem;">
+                ¿<span class="gradient-text">LISTO</span> PARA ALCANZAR<br>
+                EL <span style="
+                    font-size: 5rem;
+                    background: linear-gradient(45deg, #C0C0C0, #FFFFFF, #C0C0C0);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    text-shadow: 0 0 30px rgba(192, 192, 192, 0.5);
+                ">NIVEL 2</span>?
+                <span class="emoji-pulse" style="font-size: 3rem;">👑</span>
+            </h1>
+            
+            <!-- Comparison Visual -->
+            <div class="comparison-showcase fade-in delay-2" style="margin: 3rem 0;">
+                <div style="
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 3rem;
+                    flex-wrap: wrap;
+                ">
+                    <!-- Current State -->
+                    <div class="state-card" style="
+                        text-align: center;
+                        padding: 2rem;
+                        background: rgba(253, 184, 19, 0.1);
+                        border: 2px solid #FDB813;
+                        border-radius: 20px;
+                        min-width: 200px;
+                    ">
+                        <p style="font-size: 1rem; opacity: 0.8; margin: 0;">Si te quedas en</p>
+                        <p style="font-size: 2rem; font-weight: 700; color: #FDB813; margin: 0.5rem 0;">NIVEL 1</p>
+                        <p style="font-size: 1.5rem; margin: 0;">$22,000</p>
+                        <p style="font-size: 0.9rem; opacity: 0.7;">máximo</p>
+                    </div>
+                    
+                    <!-- Arrow -->
+                    <div class="arrow-container" style="font-size: 3rem; animation: moveArrow 2s infinite;">
+                        →
+                    </div>
+                    
+                    <!-- Future State -->
+                    <div class="state-card premium-card" style="
+                        text-align: center;
+                        padding: 2rem;
+                        background: linear-gradient(135deg, rgba(192, 192, 192, 0.2), rgba(255, 255, 255, 0.1));
+                        border: 3px solid transparent;
+                        background-clip: padding-box;
+                        border-image: linear-gradient(45deg, #FF00A1, #00F2EA) 1;
+                        border-radius: 20px;
+                        min-width: 200px;
+                        position: relative;
+                        overflow: hidden;
+                    ">
+                        <!-- Sparkle Effect -->
+                        <div class="sparkle-overlay" style="
+                            position: absolute;
+                            top: -50%;
+                            left: -50%;
+                            width: 200%;
+                            height: 200%;
+                            background: linear-gradient(45deg, 
+                                transparent 30%, 
+                                rgba(255, 255, 255, 0.5) 50%, 
+                                transparent 70%);
+                            animation: sparkleMove 3s infinite;
+                        "></div>
+                        
+                        <p style="font-size: 1rem; opacity: 0.8; margin: 0; position: relative;">Si alcanzas el</p>
+                        <p style="font-size: 2rem; font-weight: 700; margin: 0.5rem 0; position: relative;
+                           background: linear-gradient(45deg, #FF00A1, #00F2EA);
+                           -webkit-background-clip: text;
+                           -webkit-text-fill-color: transparent;">NIVEL 2</p>
+                        <p style="font-size: 1.8rem; font-weight: 900; margin: 0; color: #fff; position: relative;">$22,400</p>
+                        <p style="font-size: 1.2rem; color: #00F2EA; font-weight: 700; position: relative;">+$400 EXTRA</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Benefits List -->
+            <div class="benefits-container fade-in-up delay-3" style="
+                max-width: 600px;
+                margin: 3rem auto;
+                background: rgba(0, 0, 0, 0.3);
+                border-radius: 20px;
+                padding: 2rem;
+                border: 1px solid rgba(253, 184, 19, 0.3);
+            ">
+                <h3 style="text-align: center; font-size: 1.8rem; margin-bottom: 1.5rem;">
+                    Con solo <span class="text-gold">20 horas más</span> obtienes:
+                </h3>
+                <ul style="list-style: none; padding: 0; font-size: 1.2rem;">
+                    <li style="margin: 1rem 0;">✅ <strong>20% más</strong> en todas las bonificaciones</li>
+                    <li style="margin: 1rem 0;">✅ Badge exclusivo de <strong class="gradient-text">CREADOR PREMIUM</strong></li>
+                    <li style="margin: 1rem 0;">✅ Reconocimiento especial en BeeLum</li>
+                    <li style="margin: 1rem 0;">✅ Prioridad en futuros beneficios</li>
+                </ul>
+            </div>
+            
+            <!-- Motivational Message -->
+            <div class="fade-in-up delay-4" style="margin: 3rem 0;">
+                <div style="
+                    background: linear-gradient(90deg, rgba(253, 184, 19, 0.2), rgba(255, 0, 161, 0.2));
+                    border-radius: 20px;
+                    padding: 2rem;
+                    max-width: 800px;
+                    margin: 0 auto;
+                    text-align: center;
+                    border: 2px solid rgba(253, 184, 19, 0.4);
+                ">
+                    <p style="font-size: 1.5rem; font-weight: 600; margin: 0;">
+                        <span class="emoji-pulse">💪</span>
+                        En <span class="text-gold">BeeLum Agency</span> 
+                        <span class="emoji-pulse">💪</span>
+                    </p>
+                    <p style="font-size: 1.8rem; font-weight: 700; margin: 1rem 0;">
+                        <span class="gradient-text">SIEMPRE PREMIAMOS</span>
+                    </p>
+                    <p style="font-size: 1.5rem; margin: 0;">
+                        a quienes dan el <span class="text-gold">MÁXIMO ESFUERZO</span>
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Call to Action -->
+            <div class="cta-container fade-in-up delay-5" style="text-align: center; margin: 3rem 0;">
+                <div class="cta-button heartbeat" style="
+                    display: inline-block;
+                    background: linear-gradient(45deg, #FDB813, #FF00A1, #00F2EA);
+                    padding: 1.5rem 3rem;
+                    border-radius: 50px;
+                    font-size: 1.8rem;
+                    font-weight: 900;
+                    color: white;
+                    box-shadow: 0 10px 40px rgba(253, 184, 19, 0.5);
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                ">
+                    ¡ACEPTA EL RETO! 🚀
+                </div>
+                <p style="margin-top: 1.5rem; font-size: 1.2rem; opacity: 0.9;">
+                    Supera las <span class="text-cyan">80 horas</span> y sé parte del <span class="text-gold">TOP</span>
+                </p>
+            </div>
+            
+            <!-- Final Logo Section -->
+            <div class="fade-in delay-6" style="text-align: center; margin-top: 3rem;">
+                <div style="display: flex; justify-content: center; align-items: center; gap: 2rem; flex-wrap: wrap;">
+                    <img src="../Recursos/logo-beelum/Logo beelum Letra blanca- para fondos oscuros.png" alt="BeeLum" style="width: 200px;">
+                    <span style="font-size: 2rem;">🤝</span>
+                    <img src="../Recursos/logo-tiktok/icono tiktok transparente.png" alt="TikTok" style="width: 80px; height: 80px;">
+                </div>
+                <p style="margin-top: 1rem; font-size: 1.1rem; opacity: 0.8;">
+                    Juntos hacia el <span class="gradient-text">ÉXITO</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Watermark -->
+    <div class="watermark" style="position: fixed; z-index: 100;">
+        <img src="../Recursos/logo-beelum/Logo beelum Letra blanca- para fondos oscuros.png" alt="BeeLum Agency" style="width: 120px; opacity: 0.5;">
+    </div>
+    
+    <!-- Custom Styles for this slide -->
+    <style>
+        /* Override default styles for scrollable content */
+        body {
+            overflow-y: auto !important;
+            height: auto !important;
+        }
+        
+        .slide-container {
+            min-height: 100vh;
+            overflow-y: visible !important;
+            height: auto !important;
+        }
+        
+        /* Ensure background stays fixed while content scrolls */
+        .slide-bg {
+            position: fixed !important;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+        }
+        
+        /* Content should scroll over the fixed background */
+        .slide-content {
+            position: relative;
+            z-index: 10;
+        }
+        
+        /* Fullscreen button stays fixed */
+        .fullscreen-button {
+            position: fixed !important;
+            z-index: 1000;
+        }
+        
+        /* Custom Animations */
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        @keyframes moveArrow {
+            0%, 100% { transform: translateX(0); }
+            50% { transform: translateX(10px); }
+        }
+        
+        @keyframes sparkleMove {
+            0% { transform: rotate(0deg) translateX(-100%); }
+            100% { transform: rotate(360deg) translateX(100%); }
+        }
+        
+        @keyframes moveNeon {
+            0%, 100% { opacity: 0.3; transform: translateX(0) rotate(25deg); }
+            50% { opacity: 0.8; transform: translateX(20px) rotate(25deg); }
+        }
+        
+        .confetti-slow {
+            position: absolute;
+            font-size: 2.5rem;
+            animation: confettiFallSlow 15s linear infinite;
+        }
+        
+        @keyframes confettiFallSlow {
+            0% {
+                transform: translateY(-100vh) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh) rotate(720deg);
+                opacity: 0;
+            }
+        }
+        
+        /* Hover Effects */
+        .cta-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 15px 50px rgba(253, 184, 19, 0.7);
+        }
+        
+        .state-card {
+            transition: all 0.3s ease;
+        }
+        
+        .state-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem !important;
+            }
+            
+            h1 span {
+                font-size: 3rem !important;
+            }
+            
+            .arrow-container {
+                transform: rotate(90deg);
+                margin: 1rem 0;
+            }
+            
+            .comparison-showcase > div {
+                flex-direction: column;
+            }
+            
+            .cta-button {
+                font-size: 1.5rem !important;
+                padding: 1rem 2rem !important;
+            }
+        }
+    </style>
+    
+    <!-- JavaScript -->
+    <script src="../js/slide-navigation.js"></script>
+    
+    <script>
+        // Add interactive effects
+        window.addEventListener('load', () => {
+            // CTA Button interaction
+            const ctaButton = document.querySelector('.cta-button');
+            if (ctaButton) {
+                ctaButton.addEventListener('click', () => {
+                    // Create explosion of emojis
+                    const emojis = ['🎉', '🎊', '✨', '💎', '🏆', '🚀'];
+                    for (let i = 0; i < 20; i++) {
+                        const emoji = document.createElement('span');
+                        emoji.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+                        emoji.style.position = 'fixed';
+                        emoji.style.left = '50%';
+                        emoji.style.top = '50%';
+                        emoji.style.fontSize = '2rem';
+                        emoji.style.zIndex = '9999';
+                        emoji.style.animation = `explode ${Math.random() * 2 + 1}s ease-out`;
+                        document.body.appendChild(emoji);
+                        
+                        setTimeout(() => emoji.remove(), 2000);
+                    }
+                });
+            }
+            
+            // Add style for explosion animation
+            const style = document.createElement('style');
+            style.textContent = `
+                @keyframes explode {
+                    0% {
+                        transform: translate(-50%, -50%) scale(0);
+                        opacity: 1;
+                    }
+                    100% {
+                        transform: translate(
+                            calc(-50% + ${Math.random() * 200 - 100}px),
+                            calc(-50% + ${Math.random() * 200 - 100}px)
+                        ) scale(2);
+                        opacity: 0;
+                    }
+                }
+            `;
+            document.head.appendChild(style);
+        });
+    </script>
+</body>
+</html>

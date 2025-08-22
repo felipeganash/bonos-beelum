@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Slide 3 - Requisitos para Participar</title>
+    <title>Slide 3 - Sistema de Diamantes</title>
     
     <!-- Preconnect for performance -->
     <link rel="dns-prefetch" href="https://fonts.googleapis.com">
@@ -20,7 +20,7 @@
     
     <!-- Navigation metadata -->
     <meta name="slide-number" content="3">
-    <meta name="slide-total" content="4">
+    <meta name="slide-total" content="6">
     <link rel="prev" href="slide-02.html">
     <link rel="next" href="slide-04.html">
     
@@ -40,23 +40,18 @@
         <!-- Background Elements -->
         <div class="slide-bg" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;">
             <!-- Neon Lines -->
-            <div class="neon-line gold" style="top: 20%; left: -10%; transform: rotate(15deg);"></div>
-            <div class="neon-line cyan" style="top: 45%; right: -10%; transform: rotate(-15deg);"></div>
-            <div class="neon-line pink" style="bottom: 30%; left: -10%; transform: rotate(-25deg);"></div>
-            <div class="neon-line gold" style="bottom: 10%; right: -10%; transform: rotate(25deg);"></div>
+            <div class="neon-line cyan" style="top: 15%; left: -5%; transform: rotate(30deg);"></div>
+            <div class="neon-line pink" style="top: 40%; right: -5%; transform: rotate(-30deg);"></div>
+            <div class="neon-line cyan" style="bottom: 25%; left: -5%; transform: rotate(-20deg);"></div>
+            <div class="neon-line pink" style="bottom: 15%; right: -5%; transform: rotate(20deg);"></div>
             
-            <!-- Background Pattern -->
-            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0.05;">
-                <svg width="100%" height="100%">
-                    <pattern id="hexPattern" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
-                        <polygon points="30,5 50,20 50,40 30,55 10,40 10,20" 
-                                 fill="none" 
-                                 stroke="#FDB813" 
-                                 stroke-width="0.5"/>
-                    </pattern>
-                    <rect width="100%" height="100%" fill="url(#hexPattern)" />
-                </svg>
-            </div>
+            <!-- Floating Elements -->
+            <span class="emoji-float" style="left: 5%; animation-delay: 0s;">💎</span>
+            <span class="emoji-float" style="left: 20%; animation-delay: 1s;">✨</span>
+            <span class="emoji-float" style="left: 40%; animation-delay: 2s;">💎</span>
+            <span class="emoji-float" style="left: 60%; animation-delay: 3s;">⭐</span>
+            <span class="emoji-float" style="left: 80%; animation-delay: 4s;">💎</span>
+            <span class="emoji-float" style="left: 95%; animation-delay: 5s;">✨</span>
         </div>
         
         <!-- Main Content -->
@@ -74,83 +69,103 @@
             </div>
             
             <!-- Main Title -->
-            <h1 class="fade-in-up delay-1" style="font-size: 3.5rem; line-height: 1.3; margin-bottom: 3rem;">
-                <span class="gradient-text">Requisitos</span> para<br>
-                <span class="text-gold">participar</span> y ganar
-                <span class="emoji-pulse" style="font-size: 2rem;">🎯</span>
+            <h1 class="fade-in-up delay-2" style="font-size: 3.5rem; line-height: 1.3;">
+                Entre más <span class="gradient-text">diamantes</span><br>
+                acumules, más <span class="text-gold">ganas</span>
+                <span class="emoji-pulse" style="font-size: 2.5rem;">✨</span>
             </h1>
             
-            <!-- Requirements List -->
-            <div class="requirements-list">
-                <!-- Requirement 1 -->
-                <div class="requirement-item fade-in-left delay-2">
-                    <div class="requirement-icon pulse">
-                        😊
-                    </div>
-                    <div class="requirement-text">
-                        <h4>22 días de transmisión mensual</h4>
-                        <p>Para poder participar debes cumplir en el mes 22 días de transmisión</p>
-                    </div>
+            <!-- NEW: Level Integration Message -->
+            <div class="fade-in delay-3" style="margin: 2rem 0;">
+                <p style="font-size: 1.5rem; font-weight: 600;">
+                    <span class="text-cyan">NUEVA FÓRMULA:</span>
+                </p>
+                <div style="
+                    background: linear-gradient(135deg, rgba(253, 184, 19, 0.1), rgba(0, 242, 234, 0.1));
+                    border: 2px solid rgba(253, 184, 19, 0.3);
+                    border-radius: 20px;
+                    padding: 1.5rem;
+                    margin: 1rem auto;
+                    max-width: 600px;
+                    font-size: 1.8rem;
+                    font-weight: 700;
+                ">
+                    💎 Diamantes + 🎯 Niveles = 💰 <span class="gradient-text">MÁXIMAS GANANCIAS</span>
                 </div>
-                
-                <!-- Requirement 2 -->
-                <div class="requirement-item fade-in-left delay-3">
-                    <div class="requirement-icon pulse delay-2">
-                        📅
+            </div>
+            
+            <!-- Diamond Display -->
+            <div class="diamond-container fade-in delay-4" style="margin: 3rem auto; text-align: center;">
+                <div class="diamond-emoji-wrapper" style="position: relative; display: inline-block;">
+                    <!-- Main Diamond Emoji -->
+                    <div class="diamond-emoji" style="
+                        font-size: 12rem;
+                        line-height: 1;
+                        animation: pulse 2s infinite, float 4s ease-in-out infinite;
+                        filter: drop-shadow(0 0 30px rgba(0, 242, 234, 0.8));
+                        text-shadow: 0 0 40px rgba(0, 242, 234, 0.6);
+                    ">
+                        💎
                     </div>
-                    <div class="requirement-text">
-                        <h4>60 horas acumuladas</h4>
-                        <p>Las horas se pueden acumular durante varios días, pero los días de transmisión se cuentan como días válidos</p>
+                    
+                    <!-- Level Indicators Around Diamond -->
+                    <div style="position: absolute; top: 50%; left: -80px; transform: translateY(-50%);">
+                        <div class="level-indicator" style="
+                            background: rgba(253, 184, 19, 0.2);
+                            border: 2px solid #FDB813;
+                            padding: 0.5rem 1rem;
+                            border-radius: 10px;
+                            font-weight: 700;
+                        ">
+                            <small>NIVEL 1</small><br>
+                            60 Hr
+                        </div>
                     </div>
-                </div>
-                
-                <!-- Requirement 3 -->
-                <div class="requirement-item fade-in-left delay-4">
-                    <div class="requirement-icon pulse delay-4">
-                        ⏰
+                    <div style="position: absolute; top: 50%; right: -80px; transform: translateY(-50%);">
+                        <div class="level-indicator" style="
+                            background: linear-gradient(135deg, rgba(192, 192, 192, 0.3), rgba(255, 255, 255, 0.1));
+                            border: 2px solid #C0C0C0;
+                            padding: 0.5rem 1rem;
+                            border-radius: 10px;
+                            font-weight: 700;
+                        ">
+                            <small>NIVEL 2</small><br>
+                            80 Hr
+                        </div>
                     </div>
-                    <div class="requirement-text">
-                        <h4>Mínimo 2 horas por transmisión</h4>
-                        <p>Solo es válido si se transmiten 2 horas mínimas</p>
-                    </div>
-                </div>
-                
-                <!-- Requirement 4 -->
-                <div class="requirement-item fade-in-left delay-5">
-                    <div class="requirement-icon pulse delay-6">
-                        🎓
-                    </div>
-                    <div class="requirement-text">
-                        <h4>Asistir sin falta a las capacitaciones de la agencia</h4>
-                        <p>Si algo ocurre o por alguna razón no puedes asistir debes informar para tener presente tu asistencia</p>
+                    
+                    <!-- Sparkle effects around diamond -->
+                    <div class="sparkles-around" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none;">
+                        <span style="position: absolute; top: -20px; left: 50%; transform: translateX(-50%); font-size: 2rem; animation: sparkle 2s infinite;">✨</span>
+                        <span style="position: absolute; bottom: -20px; left: 50%; transform: translateX(-50%); font-size: 2rem; animation: sparkle 2s infinite 0.5s;">✨</span>
+                        <span style="position: absolute; top: 50%; left: -30px; transform: translateY(-50%); font-size: 1.5rem; animation: sparkle 2s infinite 1s;">⭐</span>
+                        <span style="position: absolute; top: 50%; right: -30px; transform: translateY(-50%); font-size: 1.5rem; animation: sparkle 2s infinite 1.5s;">⭐</span>
                     </div>
                 </div>
             </div>
             
-            <!-- Important Note -->
-            <div class="fade-in-up delay-6" style="margin-top: 3rem;">
-                <div class="highlight-box">
-                    <p style="font-size: 1.2rem;">
-                        <span class="text-gold" style="font-weight: 700;">⚠️ Importante:</span> 
-                        Todos los requisitos deben cumplirse para calificar a las bonificaciones
+            <!-- Bottom Message -->
+            <div class="fade-in-up delay-5" style="margin-top: 3rem;">
+                <div class="glow-box" style="max-width: 700px; margin: 0 auto;">
+                    <p style="font-size: 1.3rem; margin: 0;">
+                        <span class="text-cyan">💡 Estrategia ganadora:</span> 
+                        Acumula diamantes + Alcanza el nivel que prefieras
+                    </p>
+                    <p style="font-size: 1.1rem; margin-top: 0.5rem; opacity: 0.9;">
+                        Los diamantes se acumulan durante <span class="text-gold">todo el mes</span>
+                    </p>
+                    <p style="font-size: 1.2rem; margin-top: 1rem; font-weight: 600;">
+                        Desbloquea bonificaciones de hasta <span class="text-gold">$22,400</span> con Nivel 2
                     </p>
                 </div>
             </div>
             
-            <!-- Call to Action -->
-            <div class="fade-in delay-7" style="margin-top: 2rem;">
-                <p class="gradient-text" style="font-size: 1.5rem; font-weight: 600;">
-                    ¡Cumple los requisitos y maximiza tus ganancias!
-                </p>
-            </div>
-            
             <!-- BeeLum Logo -->
-            <div class="fade-in delay-8" style="margin-top: 2rem;">
+            <div class="fade-in delay-6" style="margin-top: 2rem;">
                 <img src="../Recursos/logo-beelum/Logo beelum Letra blanca- para fondos oscuros.png" alt="BeeLum" style="width: 180px;">
             </div>
         </div>
     </div>
-    
     
     <!-- Watermark -->
     <div class="watermark" style="position: fixed; z-index: 100;">
@@ -191,41 +206,44 @@
             position: fixed !important;
             z-index: 1000;
         }
+        
+        /* Level Indicators Animation */
+        .level-indicator {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @media (max-width: 768px) {
+            .diamond-emoji-wrapper .level-indicator {
+                display: none;
+            }
+            
+            .diamond-emoji {
+                font-size: 8rem !important;
+            }
+        }
     </style>
     
     <!-- JavaScript -->
     <script src="../js/slide-navigation.js"></script>
     
     <script>
-        // Add hover effects to requirement items
+        // Initialize animations on load
         window.addEventListener('load', () => {
-            const requirementItems = document.querySelectorAll('.requirement-item');
+            // Add glow effect animation
+            const diamond = document.querySelector('.diamond-emoji');
+            if (diamond) {
+                // Create pulsing glow effect
+                setInterval(() => {
+                    const intensity = Math.random() * 20 + 30;
+                    diamond.style.filter = `drop-shadow(0 0 ${intensity}px rgba(0, 242, 234, 0.8))`;
+                }, 1000);
+            }
             
-            requirementItems.forEach((item, index) => {
-                item.addEventListener('mouseenter', () => {
-                    item.style.transform = 'translateX(15px) scale(1.02)';
-                    item.style.borderColor = '#FDB813';
-                    item.style.background = 'rgba(253, 184, 19, 0.15)';
-                });
-                
-                item.addEventListener('mouseleave', () => {
-                    item.style.transform = 'translateX(0) scale(1)';
-                    item.style.borderColor = 'rgba(253, 184, 19, 0.2)';
-                    item.style.background = 'rgba(255, 255, 255, 0.05)';
-                });
+            // Animate level indicators
+            const indicators = document.querySelectorAll('.level-indicator');
+            indicators.forEach((indicator, index) => {
+                indicator.style.animationDelay = `${index * 0.5}s`;
             });
-            
-            // Animate icons on scroll
-            const icons = document.querySelectorAll('.requirement-icon');
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('heartbeat');
-                    }
-                });
-            });
-            
-            icons.forEach(icon => observer.observe(icon));
         });
     </script>
 </body>

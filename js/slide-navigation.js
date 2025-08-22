@@ -6,9 +6,9 @@
 const slideNavigation = {
     // Configuración
     current: 1,
-    total: 4,
+    total: 6,
     isTransitioning: false,
-    availableSlides: [1, 2, 3, 4], // Todos los slides disponibles
+    availableSlides: [1, 2, 3, 4, 5, 6], // Todos los slides disponibles
     
     // Inicialización
     init() {
@@ -51,7 +51,7 @@ const slideNavigation = {
                     break;
                 case 'End':
                     e.preventDefault();
-                    this.goToSlide(4);
+                    this.goToSlide(6);
                     break;
                 case 'f':
                 case 'F':
@@ -97,7 +97,7 @@ const slideNavigation = {
     // Navegación entre slides
     navigate(slideNumber) {
         if (this.isTransitioning) return;
-        if (slideNumber < 1 || slideNumber > 4) return;
+        if (slideNumber < 1 || slideNumber > 6) return;
         
         this.isTransitioning = true;
         
