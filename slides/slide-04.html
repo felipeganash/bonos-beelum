@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Slide 4 - Tabla de Bonificaciones BeeLum</title>
+    
+    <!-- Preconnect for performance -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/components.css">
+    
+    <!-- Navigation metadata -->
+    <meta name="slide-number" content="4">
+    <meta name="slide-total" content="4">
+    <link rel="prev" href="slide-03.html">
+    
+    <!-- Prefetch adjacent slides -->
+    <link rel="prefetch" href="slide-03.html">
+</head>
+<body>
+    
+    <!-- Fullscreen Button -->
+    <button class="fullscreen-button" id="fullscreenBtn" title="Pantalla completa">
+        <span id="fullscreenIcon">⛶</span>
+    </button>
+    
+    <!-- Slide Container -->
+    <div class="slide-container">
+        <!-- Background Elements -->
+        <div class="slide-bg" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;">
+            <!-- Neon Lines -->
+            <div class="neon-line cyan" style="top: 10%; left: -10%; transform: rotate(20deg);"></div>
+            <div class="neon-line pink" style="top: 30%; right: -10%; transform: rotate(-20deg);"></div>
+            <div class="neon-line gold" style="bottom: 25%; left: -10%; transform: rotate(-15deg);"></div>
+            <div class="neon-line cyan" style="bottom: 15%; right: -10%; transform: rotate(15deg);"></div>
+            
+            <!-- Floating Elements -->
+            <span class="emoji-float" style="left: 5%; animation-delay: 0s;">💎</span>
+            <span class="emoji-float" style="left: 25%; animation-delay: 2s;">✨</span>
+            <span class="emoji-float" style="left: 45%; animation-delay: 4s;">🎁</span>
+            <span class="emoji-float" style="left: 65%; animation-delay: 6s;">⭐</span>
+            <span class="emoji-float" style="left: 85%; animation-delay: 8s;">💰</span>
+            <span class="emoji-float" style="left: 95%; animation-delay: 10s;">❤️</span>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="slide-content" style="position: relative; z-index: 2; padding-top: 5rem; padding-bottom: 3rem; min-height: 100vh;">
+            <!-- TikTok Icon -->
+            <div class="fade-in" style="margin-bottom: 1.5rem;">
+                <img src="../Recursos/logo-tiktok/icono tiktok transparente.png" alt="TikTok" 
+                     style="width: 60px; height: 60px; filter: drop-shadow(0 0 15px rgba(255,255,255,0.4));">
+            </div>
+            
+            <!-- Main Title -->
+            <h1 class="fade-in-up delay-1" style="font-size: 2.8rem; margin-bottom: 1rem;">
+                <span style="display: flex; align-items: center; justify-content: center; gap: 1rem;">
+                    <span class="sparkle-emoji">✨</span>
+                    <span class="text-gold">Tabla de</span>
+                    <span class="sparkle-emoji">🎁</span>
+                </span>
+            </h1>
+            <h1 class="fade-in-up delay-2" style="font-size: 3.5rem; margin-bottom: 3rem;">
+                <span class="gradient-text">Bonificaciones BeeLum</span>
+                <span class="sparkle-emoji" style="font-size: 2.5rem; margin-left: 1rem;">✨</span>
+            </h1>
+            
+            <!-- Bonification Table -->
+            <div class="bonus-table-container fade-in delay-3">
+                <table class="bonus-table">
+                    <thead>
+                        <tr>
+                            <th class="table-header-diamonds">
+                                <span class="header-icon">💎</span>
+                                Diamantes
+                            </th>
+                            <th class="table-header-earnings">
+                                Ganancia<br>diamantes
+                            </th>
+                            <th class="table-header-bonus">
+                                Bono
+                            </th>
+                            <th class="table-header-total">
+                                Ganancia<br>creador
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-row fade-in-left delay-4">
+                            <td class="diamonds-cell">
+                                <span class="diamond-icon">💎</span> 100,000
+                            </td>
+                            <td class="earnings-cell">$500</td>
+                            <td class="bonus-cell">$50</td>
+                            <td class="total-cell">$550</td>
+                        </tr>
+                        <tr class="table-row fade-in-left delay-5">
+                            <td class="diamonds-cell">
+                                <span class="diamond-icon">💎</span> 200,000
+                            </td>
+                            <td class="earnings-cell">$1,000</td>
+                            <td class="bonus-cell">$100</td>
+                            <td class="total-cell">$1,100</td>
+                        </tr>
+                        <tr class="table-row fade-in-left delay-6">
+                            <td class="diamonds-cell">
+                                <span class="diamond-icon">💎</span> 300,000
+                            </td>
+                            <td class="earnings-cell">$1,500</td>
+                            <td class="bonus-cell">$150</td>
+                            <td class="total-cell">$1,650</td>
+                        </tr>
+                        <tr class="table-row fade-in-left delay-7">
+                            <td class="diamonds-cell">
+                                <span class="diamond-icon">💎</span> 500,000
+                            </td>
+                            <td class="earnings-cell">$2,500</td>
+                            <td class="bonus-cell">$250</td>
+                            <td class="total-cell">$2,750</td>
+                        </tr>
+                        <tr class="table-row fade-in-left delay-8">
+                            <td class="diamonds-cell">
+                                <span class="diamond-icon">💎</span> 1,000,000
+                            </td>
+                            <td class="earnings-cell">$5,000</td>
+                            <td class="bonus-cell">$500</td>
+                            <td class="total-cell">$5,500</td>
+                        </tr>
+                        <tr class="table-row fade-in-left delay-9">
+                            <td class="diamonds-cell">
+                                <span class="diamond-icon">💎</span> 2,500,000
+                            </td>
+                            <td class="earnings-cell">$12,500</td>
+                            <td class="bonus-cell">$1,250</td>
+                            <td class="total-cell">$13,750</td>
+                        </tr>
+                        <tr class="table-row highlight-row fade-in-left delay-10">
+                            <td class="diamonds-cell">
+                                <span class="diamond-icon">💎</span> 4,000,000
+                            </td>
+                            <td class="earnings-cell">$20,000</td>
+                            <td class="bonus-cell">$2,000</td>
+                            <td class="total-cell total-highlight">$22,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- Bottom Message -->
+            <div class="fade-in-up delay-11" style="margin-top: 2.5rem;">
+                <div class="glow-box" style="max-width: 700px; margin: 0 auto;">
+                    <p style="font-size: 1.3rem; margin: 0;">
+                        <span class="text-cyan">🚀 Meta máxima:</span> 
+                        <span class="text-gold" style="font-size: 1.5rem; font-weight: 700;">4 millones de diamantes</span>
+                    </p>
+                    <p style="font-size: 1.1rem; margin-top: 0.5rem; opacity: 0.9;">
+                        Alcanza el máximo nivel y gana hasta <span class="text-gold">$22,000</span> en total
+                    </p>
+                </div>
+            </div>
+            
+            <!-- BeeLum Logo -->
+            <div class="fade-in delay-12" style="margin-top: 2rem;">
+                <img src="../Recursos/logo-beelum/Logo beelum Letra blanca- para fondos oscuros.png" alt="BeeLum" style="width: 180px;">
+            </div>
+        </div>
+    </div>
+    
+    <!-- Watermark -->
+    <div class="watermark" style="position: fixed; z-index: 100;">
+        <img src="../Recursos/logo-beelum/Logo beelum Letra blanca- para fondos oscuros.png" alt="BeeLum Agency" style="width: 120px; opacity: 0.5;">
+    </div>
+    
+    <!-- Custom Styles for this slide -->
+    <style>
+        /* Override default styles for scrollable content */
+        body {
+            overflow-y: auto !important;
+            height: auto !important;
+        }
+        
+        .slide-container {
+            min-height: 100vh;
+            overflow-y: visible !important;
+            height: auto !important;
+        }
+        
+        /* Ensure background stays fixed while content scrolls */
+        .slide-bg {
+            position: fixed !important;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+        }
+        
+        /* Content should scroll over the fixed background */
+        .slide-content {
+            position: relative;
+            z-index: 10;
+        }
+        
+        /* Fullscreen button stays fixed */
+        .fullscreen-button {
+            position: fixed !important;
+            z-index: 1000;
+        }
+    </style>
+    
+    <!-- JavaScript -->
+    <script src="../js/slide-navigation.js"></script>
+    
+    <script>
+        // Add hover effects to table rows
+        window.addEventListener('load', () => {
+            const tableRows = document.querySelectorAll('.table-row');
+            
+            tableRows.forEach((row) => {
+                row.addEventListener('mouseenter', () => {
+                    row.style.transform = 'scale(1.02)';
+                    row.style.background = 'rgba(253, 184, 19, 0.1)';
+                });
+                
+                row.addEventListener('mouseleave', () => {
+                    row.style.transform = 'scale(1)';
+                    if (row.classList.contains('highlight-row')) {
+                        row.style.background = 'linear-gradient(90deg, rgba(253, 184, 19, 0.2), rgba(255, 0, 161, 0.2))';
+                    } else {
+                        row.style.background = 'rgba(255, 255, 255, 0.03)';
+                    }
+                });
+            });
+            
+            // Add pulse animation to diamond icons
+            const diamondIcons = document.querySelectorAll('.diamond-icon');
+            diamondIcons.forEach((icon, index) => {
+                icon.style.animationDelay = `${index * 0.2}s`;
+            });
+            
+            // Add sparkle effect to total highlight
+            const totalHighlight = document.querySelector('.total-highlight');
+            if (totalHighlight) {
+                setInterval(() => {
+                    totalHighlight.style.textShadow = `0 0 ${Math.random() * 20 + 10}px rgba(253, 184, 19, 0.8)`;
+                }, 1000);
+            }
+        });
+    </script>
+    
+    <style>
+        /* Table Specific Styles */
+        .bonus-table-container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            overflow-x: auto;
+            border-radius: 20px;
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(10px);
+            padding: 1.5rem;
+            border: 1px solid rgba(253, 184, 19, 0.2);
+            box-shadow: 0 0 30px rgba(253, 184, 19, 0.1);
+        }
+        
+        .bonus-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            font-size: 1.1rem;
+        }
+        
+        .bonus-table thead tr {
+            background: linear-gradient(90deg, rgba(253, 184, 19, 0.3), rgba(0, 242, 234, 0.3));
+        }
+        
+        .bonus-table th {
+            padding: 1.2rem 1rem;
+            text-align: center;
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: #fff;
+            border-bottom: 2px solid rgba(253, 184, 19, 0.5);
+        }
+        
+        .table-header-diamonds {
+            text-align: left;
+            padding-left: 2rem;
+        }
+        
+        .header-icon {
+            font-size: 1.5rem;
+            margin-right: 0.5rem;
+            vertical-align: middle;
+        }
+        
+        .bonus-table tbody tr {
+            transition: all 0.3s ease;
+            background: rgba(255, 255, 255, 0.03);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .bonus-table tbody tr:hover {
+            background: rgba(253, 184, 19, 0.1);
+            transform: scale(1.02);
+        }
+        
+        .bonus-table td {
+            padding: 1rem;
+            text-align: center;
+            color: #fff;
+            font-size: 1.15rem;
+        }
+        
+        .diamonds-cell {
+            text-align: left;
+            padding-left: 2rem;
+            font-weight: 600;
+            color: #00F2EA;
+        }
+        
+        .diamond-icon {
+            font-size: 1.3rem;
+            margin-right: 0.5rem;
+            display: inline-block;
+            animation: pulse 2s infinite;
+        }
+        
+        .earnings-cell {
+            color: #fff;
+            font-weight: 600;
+        }
+        
+        .bonus-cell {
+            color: #FF00A1;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+        
+        .total-cell {
+            color: #FDB813;
+            font-weight: 700;
+            font-size: 1.3rem;
+        }
+        
+        .highlight-row {
+            background: linear-gradient(90deg, rgba(253, 184, 19, 0.2), rgba(255, 0, 161, 0.2));
+            border: 2px solid rgba(253, 184, 19, 0.4);
+        }
+        
+        .highlight-row td {
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+        
+        .total-highlight {
+            font-size: 1.5rem !important;
+            color: #FDB813;
+            text-shadow: 0 0 20px rgba(253, 184, 19, 0.6);
+            animation: glow 2s ease-in-out infinite;
+        }
+        
+        .sparkle-emoji {
+            display: inline-block;
+            animation: sparkle 2s infinite;
+        }
+        
+        @keyframes sparkle {
+            0%, 100% { 
+                transform: scale(1) rotate(0deg);
+                opacity: 1;
+            }
+            50% { 
+                transform: scale(1.2) rotate(180deg);
+                opacity: 0.8;
+            }
+        }
+        
+        @keyframes glow {
+            0%, 100% { 
+                text-shadow: 0 0 20px rgba(253, 184, 19, 0.6);
+            }
+            50% { 
+                text-shadow: 0 0 30px rgba(253, 184, 19, 0.9),
+                             0 0 40px rgba(253, 184, 19, 0.5);
+            }
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .bonus-table-container {
+                padding: 1rem;
+            }
+            
+            .bonus-table {
+                font-size: 0.9rem;
+            }
+            
+            .bonus-table th,
+            .bonus-table td {
+                padding: 0.8rem 0.5rem;
+            }
+            
+            .table-header-diamonds,
+            .diamonds-cell {
+                padding-left: 1rem;
+            }
+            
+            h1 {
+                font-size: 2rem !important;
+            }
+        }
+    </style>
+</body>
+</html>

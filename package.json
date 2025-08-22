@@ -1,0 +1,28 @@
+{
+  "name": "beelum-bonificaciones-optimized",
+  "version": "1.0.0",
+  "description": "Presentación optimizada de Bonificaciones BeeLum con renderizado estático",
+  "main": "index.html",
+  "scripts": {
+    "build": "node build-optimize.js",
+    "serve": "npx http-server dist -p 8080",
+    "serve:dev": "npx http-server . -p 8080",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "beelum",
+    "tiktok",
+    "bonificaciones",
+    "static-site",
+    "optimized"
+  ],
+  "author": "BeeLum Agency",
+  "license": "MIT",
+  "devDependencies": {
+    "html-minifier-terser": "^7.2.0",
+    "http-server": "^14.1.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

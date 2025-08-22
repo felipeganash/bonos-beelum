@@ -1,0 +1,515 @@
+/* ===================================
+   BEELUM BONIFICACIONES - COMPONENTS
+   =================================== */
+
+/* Neon Lines Component */
+.neon-line {
+    position: absolute;
+    height: 3px;
+    width: 300px;
+    opacity: 0.6;
+    filter: blur(2px);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.neon-line.pink {
+    background: linear-gradient(90deg, transparent, var(--color-pink), transparent);
+    animation: float 15s infinite ease-in-out;
+}
+
+.neon-line.cyan {
+    background: linear-gradient(90deg, transparent, var(--color-cyan), transparent);
+    animation: float 18s infinite ease-in-out reverse;
+}
+
+.neon-line.gold {
+    background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
+    animation: float 20s infinite ease-in-out;
+}
+
+/* Emoji Components */
+.emoji-float {
+    position: absolute;
+    font-size: 2rem;
+    opacity: 0.7;
+    animation: floatUp 10s infinite ease-in-out;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.emoji-pulse {
+    display: inline-block;
+    animation: pulse 2s infinite;
+}
+
+.emoji-bounce {
+    display: inline-block;
+    animation: bounce 2s infinite;
+}
+
+.emoji-rotate {
+    display: inline-block;
+    animation: rotate 5s linear infinite;
+}
+
+/* Heart Container */
+.heart-container {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 2rem 0;
+}
+
+.heart {
+    display: inline-block;
+    font-size: 1.5rem;
+    animation: heartbeat 1.5s infinite;
+}
+
+.heart:nth-child(1) { animation-delay: 0s; }
+.heart:nth-child(2) { animation-delay: 0.2s; }
+.heart:nth-child(3) { animation-delay: 0.4s; }
+.heart:nth-child(4) { animation-delay: 0.6s; }
+.heart:nth-child(5) { animation-delay: 0.8s; }
+
+/* Live Badge */
+.live-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--color-pink);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 1rem;
+    position: relative;
+    animation: pulse 2s infinite;
+}
+
+.live-badge::before {
+    content: '';
+    position: absolute;
+    left: 1rem;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    animation: blink 1s infinite;
+}
+
+/* Diamond Component */
+.diamond-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 3rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.diamond-3d-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.diamond-main {
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(0 0 30px rgba(0, 242, 234, 0.6));
+    animation: rotate3d 20s linear infinite;
+}
+
+.diamond-sparkles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.sparkle {
+    position: absolute;
+    font-size: 1.5rem;
+    animation: sparkle 3s infinite ease-in-out;
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.8));
+}
+
+@keyframes sparkle {
+    0%, 100% {
+        opacity: 0;
+        transform: scale(0) rotate(0deg);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.2) rotate(180deg);
+    }
+}
+
+@keyframes rotate3d {
+    from {
+        transform: rotateY(0deg) rotateX(10deg);
+    }
+    to {
+        transform: rotateY(360deg) rotateX(10deg);
+    }
+}
+
+/* Button Components */
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-primary {
+    background: var(--gradient-gold);
+    color: var(--color-black);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(253, 184, 19, 0.5);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--color-white);
+    border: 2px solid var(--color-gold);
+}
+
+.btn-secondary:hover {
+    background: var(--color-gold);
+    color: var(--color-black);
+    transform: translateY(-2px);
+}
+
+.btn-gradient {
+    background: var(--gradient-tiktok);
+    color: white;
+    background-size: 200% 200%;
+    animation: gradient-shift 3s ease infinite;
+}
+
+/* Card Component */
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 2rem;
+    border: 1px solid rgba(253, 184, 19, 0.2);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-gold);
+    box-shadow: 0 10px 30px rgba(253, 184, 19, 0.2);
+}
+
+.card-header {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: var(--color-gold);
+    margin-bottom: 0.5rem;
+}
+
+.card-subtitle {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.card-body {
+    margin-bottom: 1.5rem;
+}
+
+.card-footer {
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Badge Component */
+.badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.badge-gold {
+    background: rgba(253, 184, 19, 0.2);
+    color: var(--color-gold);
+    border: 1px solid var(--color-gold);
+}
+
+.badge-cyan {
+    background: rgba(0, 242, 234, 0.2);
+    color: var(--color-cyan);
+    border: 1px solid var(--color-cyan);
+}
+
+.badge-pink {
+    background: rgba(255, 0, 80, 0.2);
+    color: var(--color-pink);
+    border: 1px solid var(--color-pink);
+}
+
+/* Stats Card */
+.stats-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 1.5rem;
+    text-align: center;
+    border: 1px solid rgba(253, 184, 19, 0.2);
+    transition: all 0.3s ease;
+}
+
+.stats-card:hover {
+    transform: scale(1.05);
+    border-color: var(--color-gold);
+}
+
+.stats-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.stats-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-gold);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.stats-label {
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+}
+
+/* TikTok Style Counter */
+.tiktok-counter {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.counter-icon {
+    font-size: 1.2rem;
+}
+
+.counter-value {
+    font-weight: 700;
+    color: var(--color-white);
+}
+
+/* Watermark */
+.watermark {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    opacity: 0.3;
+    z-index: 100;
+    pointer-events: none;
+}
+
+.watermark img {
+    width: 80px;
+    height: auto;
+}
+
+/* Glow Box */
+.glow-box {
+    position: relative;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.glow-box::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: var(--gradient-tiktok);
+    border-radius: 20px;
+    z-index: -1;
+    animation: gradient-shift 3s ease infinite;
+    background-size: 200% 200%;
+}
+
+/* Floating Particles */
+.particles-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.particle {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: var(--color-gold);
+    border-radius: 50%;
+    opacity: 0;
+    animation: particle 10s infinite;
+}
+
+/* Logo Float Component */
+.logo-float {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    opacity: 0.3;
+    animation: floatUp 15s infinite ease-in-out;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.logo-float img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Highlight Box */
+.highlight-box {
+    background: linear-gradient(135deg, rgba(253, 184, 19, 0.1), rgba(253, 184, 19, 0.05));
+    border-left: 4px solid var(--color-gold);
+    padding: 1rem 1.5rem;
+    margin: 1rem 0;
+    border-radius: 0 10px 10px 0;
+}
+
+.highlight-box p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Icon Box */
+.icon-box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.icon-box:hover {
+    background: rgba(253, 184, 19, 0.1);
+    transform: translateX(5px);
+}
+
+.icon-box-icon {
+    font-size: 2rem;
+    min-width: 50px;
+    text-align: center;
+}
+
+.icon-box-content h4 {
+    color: var(--color-gold);
+    margin-bottom: 0.5rem;
+}
+
+.icon-box-content p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* Divider */
+.divider {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(253, 184, 19, 0.5), transparent);
+    margin: 2rem 0;
+}
+
+.divider-thick {
+    height: 3px;
+}
+
+.divider-glow {
+    box-shadow: 0 0 10px rgba(253, 184, 19, 0.5);
+}
+
+/* Success Message */
+.success-message {
+    background: linear-gradient(135deg, rgba(0, 255, 0, 0.1), rgba(0, 255, 0, 0.05));
+    border: 1px solid rgba(0, 255, 0, 0.5);
+    color: #00ff00;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 1rem 0;
+    animation: fadeIn 0.5s ease;
+}
+
+/* Error Message */
+.error-message {
+    background: linear-gradient(135deg, rgba(255, 0, 0, 0.1), rgba(255, 0, 0, 0.05));
+    border: 1px solid rgba(255, 0, 0, 0.5);
+    color: #ff4444;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 1rem 0;
+    animation: fadeIn 0.5s ease;
+}
+
+/* Loading Overlay */
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+}
+
+.loading-content {
+    text-align: center;
+}
+
+.loading-spinner {
+    margin: 0 auto 1rem;
+}

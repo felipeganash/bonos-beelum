@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Slide 1 - Nuevas Bonificaciones BeeLum</title>
+    
+    <!-- Preconnect for performance -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/components.css">
+    
+    <!-- Navigation metadata -->
+    <meta name="slide-number" content="1">
+    <meta name="slide-total" content="4">
+    <link rel="next" href="slide-02.html">
+    
+    <!-- Prefetch next slide -->
+    <link rel="prefetch" href="slide-02.html">
+</head>
+<body>
+    
+    <!-- Fullscreen Button -->
+    <button class="fullscreen-button" id="fullscreenBtn" title="Pantalla completa">
+        <span id="fullscreenIcon">⛶</span>
+    </button>
+    
+    <!-- Slide Container -->
+    <div class="slide-container">
+        <!-- Background Elements -->
+        <div class="slide-bg" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;">
+            <!-- Neon Lines -->
+            <div class="neon-line pink" style="top: 10%; left: -10%; transform: rotate(25deg);"></div>
+            <div class="neon-line cyan" style="top: 30%; right: -10%; transform: rotate(-25deg);"></div>
+            <div class="neon-line pink" style="bottom: 20%; left: -10%; transform: rotate(-25deg);"></div>
+            <div class="neon-line cyan" style="bottom: 10%; right: -10%; transform: rotate(25deg);"></div>
+            <div class="neon-line gold" style="top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(45deg);"></div>
+            
+            <!-- Floating Emojis -->
+            <span class="emoji-float" style="left: 10%; animation-delay: 0s;">✨</span>
+            <span class="emoji-float" style="left: 30%; animation-delay: 2s;">💎</span>
+            <span class="emoji-float" style="left: 50%; animation-delay: 4s;">🚀</span>
+            <span class="emoji-float" style="left: 70%; animation-delay: 6s;">⭐</span>
+            <span class="emoji-float" style="left: 90%; animation-delay: 8s;">💰</span>
+            
+            <!-- Floating Logos -->
+            <span class="logo-float" style="left: 15%; animation-delay: 1s;">
+                <img src="../Recursos/logo-beelum/icono beelum-fondo-transparente.png" alt="BeeLum" style="opacity: 0.3;">
+            </span>
+            <span class="logo-float" style="right: 15%; animation-delay: 5s;">
+                <img src="../Recursos/logo-tiktok/icono tiktok transparente.png" alt="TikTok" style="opacity: 0.3;">
+            </span>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="slide-content" style="position: relative; z-index: 2; padding-top: 5rem; padding-bottom: 3rem; min-height: 100vh;">
+            <!-- Logo Container -->
+            <div class="logo-container fade-in">
+                <div class="logo-beelum pulse">
+                    <img src="../Recursos/logo-beelum/icono beelum-fondo-transparente.png" alt="BeeLum Logo" style="width: 150px; height: 150px;">
+                </div>
+            </div>
+            
+            <!-- Main Title -->
+            <h1 class="fade-in-up delay-2">
+                NUEVAS BONIFICACIONES
+            </h1>
+            <h1 class="text-gold fade-in-up delay-3" style="font-size: 5rem; font-weight: 900;">
+                BEELUM
+            </h1>
+            
+            <!-- Subtitle -->
+            <p class="fade-in-up delay-4" style="font-size: 2rem; margin: 2rem 0;">
+                <span class="emoji-pulse">🔥</span> 
+                Convierte tu talento en ganancias 
+                <span class="emoji-pulse">🔥</span>
+            </p>
+            
+            <!-- Heart Container -->
+            <div class="heart-container fade-in delay-5">
+                <span class="heart">❤️</span>
+                <span class="heart">❤️</span>
+                <span class="heart">❤️</span>
+                <span class="heart">❤️</span>
+                <span class="heart">❤️</span>
+                <span class="heart">❤️</span>
+            </div>
+            
+            <!-- Bottom Text -->
+            <div class="fade-in-up delay-6" style="margin-top: 3rem;">
+                <p class="gradient-text" style="font-size: 1.8rem; font-weight: 600;">
+                    Sistema de Recompensas TikTok Live
+                </p>
+                <p class="text-cyan" style="font-size: 1.2rem; margin-top: 1rem; opacity: 0.9;">
+                    Gana hasta <span class="text-gold" style="font-size: 1.5rem; font-weight: 700;">$22,000</span> con 4M de diamantes
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- Watermark -->
+    <div class="watermark" style="position: fixed; z-index: 100;">
+        <img src="../Recursos/logo-beelum/Logo beelum Letra blanca- para fondos oscuros.png" alt="BeeLum Agency" style="width: 120px; opacity: 0.5;">
+    </div>
+    
+    <!-- Custom Styles for this slide -->
+    <style>
+        /* Override default styles for scrollable content */
+        body {
+            overflow-y: auto !important;
+            height: auto !important;
+        }
+        
+        .slide-container {
+            min-height: 100vh;
+            overflow-y: visible !important;
+            height: auto !important;
+        }
+        
+        /* Ensure background stays fixed while content scrolls */
+        .slide-bg {
+            position: fixed !important;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+        }
+        
+        /* Content should scroll over the fixed background */
+        .slide-content {
+            position: relative;
+            z-index: 10;
+        }
+        
+        /* Fullscreen button stays fixed */
+        .fullscreen-button {
+            position: fixed !important;
+            z-index: 1000;
+        }
+    </style>
+    
+    <!-- JavaScript -->
+    <script src="../js/slide-navigation.js"></script>
+    
+    <script>
+        // Additional animations on load
+        window.addEventListener('load', () => {
+            // Add stagger animation to elements
+            const staggerElements = document.querySelectorAll('.fade-in-up');
+            staggerElements.forEach((el, index) => {
+                el.style.animationDelay = `${index * 0.1}s`;
+            });
+            
+            // Continuous animation for floating elements
+            const floatingElements = document.querySelectorAll('.emoji-float, .logo-float');
+            floatingElements.forEach((el) => {
+                el.addEventListener('animationend', () => {
+                    el.style.animation = 'none';
+                    setTimeout(() => {
+                        el.style.animation = '';
+                    }, 10);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

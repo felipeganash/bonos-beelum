@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Slide 3 - Requisitos para Participar</title>
+    
+    <!-- Preconnect for performance -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/components.css">
+    
+    <!-- Navigation metadata -->
+    <meta name="slide-number" content="3">
+    <meta name="slide-total" content="4">
+    <link rel="prev" href="slide-02.html">
+    <link rel="next" href="slide-04.html">
+    
+    <!-- Prefetch adjacent slides -->
+    <link rel="prefetch" href="slide-02.html">
+    <link rel="prefetch" href="slide-04.html">
+</head>
+<body>
+    
+    <!-- Fullscreen Button -->
+    <button class="fullscreen-button" id="fullscreenBtn" title="Pantalla completa">
+        <span id="fullscreenIcon">⛶</span>
+    </button>
+    
+    <!-- Slide Container -->
+    <div class="slide-container">
+        <!-- Background Elements -->
+        <div class="slide-bg" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;">
+            <!-- Neon Lines -->
+            <div class="neon-line gold" style="top: 20%; left: -10%; transform: rotate(15deg);"></div>
+            <div class="neon-line cyan" style="top: 45%; right: -10%; transform: rotate(-15deg);"></div>
+            <div class="neon-line pink" style="bottom: 30%; left: -10%; transform: rotate(-25deg);"></div>
+            <div class="neon-line gold" style="bottom: 10%; right: -10%; transform: rotate(25deg);"></div>
+            
+            <!-- Background Pattern -->
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0.05;">
+                <svg width="100%" height="100%">
+                    <pattern id="hexPattern" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
+                        <polygon points="30,5 50,20 50,40 30,55 10,40 10,20" 
+                                 fill="none" 
+                                 stroke="#FDB813" 
+                                 stroke-width="0.5"/>
+                    </pattern>
+                    <rect width="100%" height="100%" fill="url(#hexPattern)" />
+                </svg>
+            </div>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="slide-content" style="position: relative; z-index: 2; padding-top: 5rem; padding-bottom: 3rem; min-height: 100vh;">
+            <!-- TikTok Live Badge -->
+            <div class="fade-in" style="margin-bottom: 2rem;">
+                <div style="display: inline-flex; align-items: center; gap: 1rem;">
+                    <!-- TikTok Logo -->
+                    <img src="../Recursos/logo-tiktok/icono tiktok transparente.png" alt="TikTok" style="width: 60px; height: 60px; filter: drop-shadow(0 0 10px rgba(255,255,255,0.3));">
+                    <!-- Live Badge -->
+                    <div class="live-badge">
+                        LIVE
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Main Title -->
+            <h1 class="fade-in-up delay-1" style="font-size: 3.5rem; line-height: 1.3; margin-bottom: 3rem;">
+                <span class="gradient-text">Requisitos</span> para<br>
+                <span class="text-gold">participar</span> y ganar
+                <span class="emoji-pulse" style="font-size: 2rem;">🎯</span>
+            </h1>
+            
+            <!-- Requirements List -->
+            <div class="requirements-list">
+                <!-- Requirement 1 -->
+                <div class="requirement-item fade-in-left delay-2">
+                    <div class="requirement-icon pulse">
+                        😊
+                    </div>
+                    <div class="requirement-text">
+                        <h4>22 días de transmisión mensual</h4>
+                        <p>Para poder participar debes cumplir en el mes 22 días de transmisión</p>
+                    </div>
+                </div>
+                
+                <!-- Requirement 2 -->
+                <div class="requirement-item fade-in-left delay-3">
+                    <div class="requirement-icon pulse delay-2">
+                        📅
+                    </div>
+                    <div class="requirement-text">
+                        <h4>60 horas acumuladas</h4>
+                        <p>Las horas se pueden acumular durante varios días, pero los días de transmisión se cuentan como días válidos</p>
+                    </div>
+                </div>
+                
+                <!-- Requirement 3 -->
+                <div class="requirement-item fade-in-left delay-4">
+                    <div class="requirement-icon pulse delay-4">
+                        ⏰
+                    </div>
+                    <div class="requirement-text">
+                        <h4>Mínimo 2 horas por transmisión</h4>
+                        <p>Solo es válido si se transmiten 2 horas mínimas</p>
+                    </div>
+                </div>
+                
+                <!-- Requirement 4 -->
+                <div class="requirement-item fade-in-left delay-5">
+                    <div class="requirement-icon pulse delay-6">
+                        🎓
+                    </div>
+                    <div class="requirement-text">
+                        <h4>Asistir sin falta a las capacitaciones de la agencia</h4>
+                        <p>Si algo ocurre o por alguna razón no puedes asistir debes informar para tener presente tu asistencia</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Important Note -->
+            <div class="fade-in-up delay-6" style="margin-top: 3rem;">
+                <div class="highlight-box">
+                    <p style="font-size: 1.2rem;">
+                        <span class="text-gold" style="font-weight: 700;">⚠️ Importante:</span> 
+                        Todos los requisitos deben cumplirse para calificar a las bonificaciones
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Call to Action -->
+            <div class="fade-in delay-7" style="margin-top: 2rem;">
+                <p class="gradient-text" style="font-size: 1.5rem; font-weight: 600;">
+                    ¡Cumple los requisitos y maximiza tus ganancias!
+                </p>
+            </div>
+            
+            <!-- BeeLum Logo -->
+            <div class="fade-in delay-8" style="margin-top: 2rem;">
+                <img src="../Recursos/logo-beelum/Logo beelum Letra blanca- para fondos oscuros.png" alt="BeeLum" style="width: 180px;">
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- Watermark -->
+    <div class="watermark" style="position: fixed; z-index: 100;">
+        <img src="../Recursos/logo-beelum/Logo beelum Letra blanca- para fondos oscuros.png" alt="BeeLum Agency" style="width: 120px; opacity: 0.5;">
+    </div>
+    
+    <!-- Custom Styles for this slide -->
+    <style>
+        /* Override default styles for scrollable content */
+        body {
+            overflow-y: auto !important;
+            height: auto !important;
+        }
+        
+        .slide-container {
+            min-height: 100vh;
+            overflow-y: visible !important;
+            height: auto !important;
+        }
+        
+        /* Ensure background stays fixed while content scrolls */
+        .slide-bg {
+            position: fixed !important;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+        }
+        
+        /* Content should scroll over the fixed background */
+        .slide-content {
+            position: relative;
+            z-index: 10;
+        }
+        
+        /* Fullscreen button stays fixed */
+        .fullscreen-button {
+            position: fixed !important;
+            z-index: 1000;
+        }
+    </style>
+    
+    <!-- JavaScript -->
+    <script src="../js/slide-navigation.js"></script>
+    
+    <script>
+        // Add hover effects to requirement items
+        window.addEventListener('load', () => {
+            const requirementItems = document.querySelectorAll('.requirement-item');
+            
+            requirementItems.forEach((item, index) => {
+                item.addEventListener('mouseenter', () => {
+                    item.style.transform = 'translateX(15px) scale(1.02)';
+                    item.style.borderColor = '#FDB813';
+                    item.style.background = 'rgba(253, 184, 19, 0.15)';
+                });
+                
+                item.addEventListener('mouseleave', () => {
+                    item.style.transform = 'translateX(0) scale(1)';
+                    item.style.borderColor = 'rgba(253, 184, 19, 0.2)';
+                    item.style.background = 'rgba(255, 255, 255, 0.05)';
+                });
+            });
+            
+            // Animate icons on scroll
+            const icons = document.querySelectorAll('.requirement-icon');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('heartbeat');
+                    }
+                });
+            });
+            
+            icons.forEach(icon => observer.observe(icon));
+        });
+    </script>
+</body>
+</html>

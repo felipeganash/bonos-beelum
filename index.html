@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="0; url=slides/slide-01.html">
+    <title>Bonificaciones BeeLum - Sistema de Recompensas TikTok | BeeLum Agency</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Descubre el nuevo sistema de bonificaciones BeeLum para TikTok Live. Convierte tu talento en ganancias con recompensas de hasta $22,000.">
+    <meta name="keywords" content="BeeLum, TikTok Live, bonificaciones, recompensas, diamantes, streaming, creadores">
+    <meta name="author" content="BeeLum Agency">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Bonificaciones BeeLum - TikTok Live">
+    <meta property="og:description" content="Sistema de bonificaciones exclusivo. Gana hasta $22,000 con 4M de diamantes.">
+    <meta property="og:image" content="Recursos/logo-beelum/logo-beelum.png">
+    <meta property="og:url" content="https://beelum.com/bonificaciones/">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bonificaciones BeeLum - TikTok Live">
+    <meta name="twitter:description" content="Convierte tu talento en ganancias con BeeLum Agency">
+    <meta name="twitter:image" content="Recursos/logo-beelum/logo-beelum.png">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: #000;
+            color: #fff;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            overflow: hidden;
+        }
+        
+        .loading-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+        }
+        
+        .logo {
+            width: 120px;
+            height: 120px;
+            animation: pulse 1.5s infinite;
+        }
+        
+        .loading-text {
+            font-size: 1.5rem;
+            font-weight: 600;
+            background: linear-gradient(90deg, #FDB813, #00F2EA, #FF0050);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: gradient 3s ease infinite;
+            background-size: 200% 200%;
+        }
+        
+        .loading-dots {
+            display: flex;
+            gap: 0.5rem;
+        }
+        
+        .dot {
+            width: 10px;
+            height: 10px;
+            background: #FDB813;
+            border-radius: 50%;
+            animation: bounce 1.4s infinite ease-in-out both;
+        }
+        
+        .dot:nth-child(1) { animation-delay: -0.32s; }
+        .dot:nth-child(2) { animation-delay: -0.16s; }
+        .dot:nth-child(3) { animation-delay: 0; }
+        
+        @keyframes pulse {
+            0%, 100% { 
+                opacity: 1;
+                transform: scale(1);
+            }
+            50% { 
+                opacity: 0.8;
+                transform: scale(1.05);
+            }
+        }
+        
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        @keyframes bounce {
+            0%, 80%, 100% {
+                transform: scale(0);
+                opacity: 0.5;
+            }
+            40% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        
+        .manual-link {
+            margin-top: 2rem;
+            color: #FDB813;
+            text-decoration: none;
+            font-size: 0.9rem;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+        
+        .manual-link:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+        
+        /* Neon lines background */
+        .neon-line {
+            position: absolute;
+            height: 2px;
+            width: 200px;
+            opacity: 0.3;
+            filter: blur(1px);
+        }
+        
+        .neon-line.pink {
+            background: linear-gradient(90deg, transparent, #FF0050, transparent);
+            animation: float-line 10s infinite ease-in-out;
+        }
+        
+        .neon-line.cyan {
+            background: linear-gradient(90deg, transparent, #00F2EA, transparent);
+            animation: float-line 12s infinite ease-in-out reverse;
+        }
+        
+        @keyframes float-line {
+            0%, 100% { transform: translateX(-100px) rotate(0deg); }
+            50% { transform: translateX(100px) rotate(5deg); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Decorative neon lines -->
+    <div class="neon-line pink" style="top: 20%; left: 10%;"></div>
+    <div class="neon-line cyan" style="top: 40%; right: 10%;"></div>
+    <div class="neon-line pink" style="bottom: 30%; left: 20%;"></div>
+    <div class="neon-line cyan" style="bottom: 20%; right: 15%;"></div>
+    
+    <div class="loading-container">
+        <div class="logo">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="100,20 180,65 180,135 100,180 20,135 20,65" 
+                         fill="none" 
+                         stroke="#FDB813" 
+                         stroke-width="4"/>
+                <circle cx="100" cy="100" r="30" fill="#FDB813"/>
+            </svg>
+        </div>
+        
+        <div class="loading-text">Cargando Presentación</div>
+        
+        <div class="loading-dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+        
+        <a href="slides/slide-01.html" class="manual-link">
+            Si no eres redirigido automáticamente, haz clic aquí
+        </a>
+    </div>
+    
+    <script>
+        // Fallback para redirección manual si meta refresh falla
+        setTimeout(function() {
+            window.location.href = 'slides/slide-01.html';
+        }, 1000);
+        
+        // Preload critical resources
+        const preloadLinks = [
+            'slides/slide-01.html',
+            'css/styles.css',
+            'css/animations.css'
+        ];
+        
+        preloadLinks.forEach(href => {
+            const link = document.createElement('link');
+            link.rel = 'prefetch';
+            link.href = href;
+            document.head.appendChild(link);
+        });
+    </script>
+</body>
+</html>

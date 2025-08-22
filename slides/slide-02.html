@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Slide 2 - Sistema de Diamantes</title>
+    
+    <!-- Preconnect for performance -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/components.css">
+    
+    <!-- Navigation metadata -->
+    <meta name="slide-number" content="2">
+    <meta name="slide-total" content="4">
+    <link rel="prev" href="slide-01.html">
+    <link rel="next" href="slide-03.html">
+    
+    <!-- Prefetch adjacent slides -->
+    <link rel="prefetch" href="slide-01.html">
+    <link rel="prefetch" href="slide-03.html">
+</head>
+<body>
+    
+    <!-- Fullscreen Button -->
+    <button class="fullscreen-button" id="fullscreenBtn" title="Pantalla completa">
+        <span id="fullscreenIcon">⛶</span>
+    </button>
+    
+    <!-- Slide Container -->
+    <div class="slide-container">
+        <!-- Background Elements -->
+        <div class="slide-bg" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;">
+            <!-- Neon Lines -->
+            <div class="neon-line cyan" style="top: 15%; left: -5%; transform: rotate(30deg);"></div>
+            <div class="neon-line pink" style="top: 40%; right: -5%; transform: rotate(-30deg);"></div>
+            <div class="neon-line cyan" style="bottom: 25%; left: -5%; transform: rotate(-20deg);"></div>
+            <div class="neon-line pink" style="bottom: 15%; right: -5%; transform: rotate(20deg);"></div>
+            
+            <!-- Floating Elements -->
+            <span class="emoji-float" style="left: 5%; animation-delay: 0s;">💎</span>
+            <span class="emoji-float" style="left: 20%; animation-delay: 1s;">✨</span>
+            <span class="emoji-float" style="left: 40%; animation-delay: 2s;">💎</span>
+            <span class="emoji-float" style="left: 60%; animation-delay: 3s;">⭐</span>
+            <span class="emoji-float" style="left: 80%; animation-delay: 4s;">💎</span>
+            <span class="emoji-float" style="left: 95%; animation-delay: 5s;">✨</span>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="slide-content" style="position: relative; z-index: 2; padding-top: 5rem; padding-bottom: 3rem; min-height: 100vh;">
+            <!-- TikTok Live Badge -->
+            <div class="fade-in" style="margin-bottom: 2rem;">
+                <div style="display: inline-flex; align-items: center; gap: 1rem;">
+                    <!-- TikTok Logo -->
+                    <img src="../Recursos/logo-tiktok/icono tiktok transparente.png" alt="TikTok" style="width: 60px; height: 60px; filter: drop-shadow(0 0 10px rgba(255,255,255,0.3));">
+                    <!-- Live Badge -->
+                    <div class="live-badge">
+                        LIVE
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Main Title -->
+            <h1 class="fade-in-up delay-2" style="font-size: 3.5rem; line-height: 1.3;">
+                Entre más <span class="gradient-text">diamantes</span><br>
+                acumules, más <span class="text-gold">ganas</span>
+                <span class="emoji-pulse" style="font-size: 2.5rem;">✨</span>
+            </h1>
+            
+            <!-- Diamond Display -->
+            <div class="diamond-container fade-in delay-3" style="margin: 3rem auto; text-align: center;">
+                <div class="diamond-emoji-wrapper" style="position: relative; display: inline-block;">
+                    <!-- Main Diamond Emoji -->
+                    <div class="diamond-emoji" style="
+                        font-size: 12rem;
+                        line-height: 1;
+                        animation: pulse 2s infinite, float 4s ease-in-out infinite;
+                        filter: drop-shadow(0 0 30px rgba(0, 242, 234, 0.8));
+                        text-shadow: 0 0 40px rgba(0, 242, 234, 0.6);
+                    ">
+                        💎
+                    </div>
+                    
+                    <!-- Sparkle effects around diamond -->
+                    <div class="sparkles-around" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none;">
+                        <span style="position: absolute; top: -20px; left: 50%; transform: translateX(-50%); font-size: 2rem; animation: sparkle 2s infinite;">✨</span>
+                        <span style="position: absolute; bottom: -20px; left: 50%; transform: translateX(-50%); font-size: 2rem; animation: sparkle 2s infinite 0.5s;">✨</span>
+                        <span style="position: absolute; top: 50%; left: -30px; transform: translateY(-50%); font-size: 1.5rem; animation: sparkle 2s infinite 1s;">⭐</span>
+                        <span style="position: absolute; top: 50%; right: -30px; transform: translateY(-50%); font-size: 1.5rem; animation: sparkle 2s infinite 1.5s;">⭐</span>
+                        <span style="position: absolute; top: 20%; left: 20%; font-size: 1rem; animation: float 3s infinite;">✨</span>
+                        <span style="position: absolute; top: 20%; right: 20%; font-size: 1rem; animation: float 3s infinite 0.5s;">✨</span>
+                        <span style="position: absolute; bottom: 20%; left: 20%; font-size: 1rem; animation: float 3s infinite 1s;">✨</span>
+                        <span style="position: absolute; bottom: 20%; right: 20%; font-size: 1rem; animation: float 3s infinite 1.5s;">✨</span>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <!-- Bottom Message -->
+            <div class="fade-in-up delay-5" style="margin-top: 3rem;">
+                <div class="glow-box" style="max-width: 600px; margin: 0 auto;">
+                    <p style="font-size: 1.3rem; margin: 0;">
+                        <span class="text-cyan">💡 Tip:</span> Los diamantes se acumulan durante todo el mes
+                    </p>
+                    <p style="font-size: 1.1rem; margin-top: 0.5rem; opacity: 0.9;">
+                        Alcanza los objetivos y desbloquea <span class="text-gold">bonificaciones exclusivas</span>
+                    </p>
+                </div>
+            </div>
+            
+            <!-- BeeLum Logo -->
+            <div class="fade-in delay-6" style="margin-top: 2rem;">
+                <img src="../Recursos/logo-beelum/Logo beelum Letra blanca- para fondos oscuros.png" alt="BeeLum" style="width: 180px;">
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- Watermark -->
+    <div class="watermark" style="position: fixed; z-index: 100;">
+        <img src="../Recursos/logo-beelum/Logo beelum Letra blanca- para fondos oscuros.png" alt="BeeLum Agency" style="width: 120px; opacity: 0.5;">
+    </div>
+    
+    <!-- Custom Styles for this slide -->
+    <style>
+        /* Override default styles for scrollable content */
+        body {
+            overflow-y: auto !important;
+            height: auto !important;
+        }
+        
+        .slide-container {
+            min-height: 100vh;
+            overflow-y: visible !important;
+            height: auto !important;
+        }
+        
+        /* Ensure background stays fixed while content scrolls */
+        .slide-bg {
+            position: fixed !important;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+        }
+        
+        /* Content should scroll over the fixed background */
+        .slide-content {
+            position: relative;
+            z-index: 10;
+        }
+        
+        /* Fullscreen button stays fixed */
+        .fullscreen-button {
+            position: fixed !important;
+            z-index: 1000;
+        }
+    </style>
+    
+    <!-- JavaScript -->
+    <script src="../js/slide-navigation.js"></script>
+    
+    <script>
+        // Initialize animations on load
+        window.addEventListener('load', () => {
+            // Add glow effect animation
+            const diamond = document.querySelector('.diamond-emoji');
+            if (diamond) {
+                // Create pulsing glow effect
+                setInterval(() => {
+                    const intensity = Math.random() * 20 + 30;
+                    diamond.style.filter = `drop-shadow(0 0 ${intensity}px rgba(0, 242, 234, 0.8))`;
+                }, 1000);
+            }
+        });
+    </script>
+</body>
+</html>
