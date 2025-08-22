@@ -156,22 +156,13 @@
     }
 }
 
-/* Rotate Animations */
+/* Rotate Animation - Removed rotate3d as it's not used and is resource-intensive */
 @keyframes rotate {
     from {
         transform: rotate(0deg);
     }
     to {
         transform: rotate(360deg);
-    }
-}
-
-@keyframes rotate3d {
-    from {
-        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-    }
-    to {
-        transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
     }
 }
 
@@ -217,21 +208,7 @@
     }
 }
 
-/* Particle Animations */
-@keyframes particle {
-    0% {
-        opacity: 0;
-        transform: translateY(0) scale(0);
-    }
-    10% {
-        opacity: 1;
-        transform: translateY(-10px) scale(1);
-    }
-    100% {
-        opacity: 0;
-        transform: translateY(-100px) scale(0.5);
-    }
-}
+/* Removed unused particle animation */
 
 /* Heart Animation */
 @keyframes heartFloat {
@@ -261,21 +238,7 @@
     }
 }
 
-/* Wave Animation */
-@keyframes wave {
-    0%, 100% {
-        transform: translateX(0) translateY(0);
-    }
-    25% {
-        transform: translateX(10px) translateY(-10px);
-    }
-    50% {
-        transform: translateX(-10px) translateY(10px);
-    }
-    75% {
-        transform: translateX(5px) translateY(-5px);
-    }
-}
+/* Removed unused wave animation */
 
 /* Slide Animations */
 @keyframes slideInLeft {
@@ -322,36 +285,7 @@
     }
 }
 
-/* Typing Animation */
-@keyframes typing {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
-}
-
-@keyframes blink {
-    0%, 50%, 100% {
-        opacity: 1;
-    }
-    25%, 75% {
-        opacity: 0;
-    }
-}
-
-/* Counter Animation */
-@keyframes countUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+/* Removed unused animations: typing, blink, countUp */
 
 /* Utility Classes */
 .fade-in {
@@ -485,21 +419,4 @@
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Loading Animation */
-@keyframes loading {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-.loading-spinner {
-    width: 50px;
-    height: 50px;
-    border: 5px solid rgba(255, 255, 255, 0.1);
-    border-top-color: var(--color-gold);
-    border-radius: 50%;
-    animation: loading 1s linear infinite;
-}
+/* Removed unused loading animation and spinner */

@@ -1,0 +1,179 @@
+/* ===================================
+   BEELUM BONIFICACIONES - OPTIMIZED ANIMATIONS
+   Using AOS Library for better performance
+   =================================== */
+
+/* Critical animations only - Keep these for immediate feedback */
+
+/* Pulse for important CTAs */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 0.9;
+    }
+}
+
+/* Heartbeat for emphasis */
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    10% {
+        transform: scale(1.1);
+    }
+    20% {
+        transform: scale(1);
+    }
+    30% {
+        transform: scale(1.1);
+    }
+    40% {
+        transform: scale(1);
+    }
+}
+
+/* Simple glow for highlights */
+@keyframes glow {
+    0%, 100% {
+        box-shadow: 0 0 5px rgba(253, 184, 19, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(253, 184, 19, 1), 0 0 30px rgba(253, 184, 19, 0.8);
+    }
+}
+
+/* Optimized shimmer effect */
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+/* Single sparkle animation for diamonds */
+@keyframes sparkle {
+    0%, 100% {
+        opacity: 0.3;
+        transform: scale(0.8);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+}
+
+/* Utility Classes for critical animations */
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+.heartbeat {
+    animation: heartbeat 1.5s infinite;
+}
+
+.glow {
+    animation: glow 2s ease-in-out infinite;
+}
+
+.shimmer {
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    background-size: 200% 100%;
+    animation: shimmer 3s infinite;
+}
+
+/* Performance optimizations */
+.will-change-transform {
+    will-change: transform;
+}
+
+.will-change-opacity {
+    will-change: opacity;
+}
+
+/* GPU acceleration helper */
+.gpu-accelerated {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+/* Reduced motion support for accessibility */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Custom AOS animations - More performant alternatives */
+[data-aos="float-up"] {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+[data-aos="float-up"].aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+[data-aos="scale-in"] {
+    opacity: 0;
+    transform: scale(0.8);
+}
+
+[data-aos="scale-in"].aos-animate {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Confetti replacement with CSS only */
+.confetti-static {
+    position: absolute;
+    font-size: 2rem;
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+/* Neon line optimized */
+.neon-line {
+    position: absolute;
+    width: 200px;
+    height: 3px;
+    opacity: 0.3;
+    filter: blur(2px);
+    transform: translateZ(0); /* Force GPU */
+}
+
+.neon-line.gold {
+    background: linear-gradient(90deg, transparent, #FDB813, transparent);
+}
+
+.neon-line.cyan {
+    background: linear-gradient(90deg, transparent, #00F2EA, transparent);
+}
+
+.neon-line.pink {
+    background: linear-gradient(90deg, transparent, #FF00A1, transparent);
+}
+
+/* Animation delays for AOS stagger effect */
+.delay-100 { transition-delay: 100ms; }
+.delay-200 { transition-delay: 200ms; }
+.delay-300 { transition-delay: 300ms; }
+.delay-400 { transition-delay: 400ms; }
+.delay-500 { transition-delay: 500ms; }
+.delay-600 { transition-delay: 600ms; }
+
+/* Smooth transitions for all AOS elements */
+[data-aos] {
+    transition-property: transform, opacity;
+    transition-duration: 600ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

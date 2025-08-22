@@ -15,7 +15,10 @@
     
     <!-- CSS Files -->
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/animations.css">
+    <!-- AOS Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <!-- Optimized animations -->
+    <link rel="stylesheet" href="../css/animations-optimized.css">
     <link rel="stylesheet" href="../css/components.css">
     
     <!-- Navigation metadata -->
@@ -46,18 +49,18 @@
             <div class="neon-line pink" style="bottom: 15%; right: -5%; transform: rotate(20deg);"></div>
             
             <!-- Floating Elements -->
-            <span class="emoji-float" style="left: 5%; animation-delay: 0s;">💎</span>
-            <span class="emoji-float" style="left: 20%; animation-delay: 1s;">✨</span>
-            <span class="emoji-float" style="left: 40%; animation-delay: 2s;">💎</span>
-            <span class="emoji-float" style="left: 60%; animation-delay: 3s;">⭐</span>
-            <span class="emoji-float" style="left: 80%; animation-delay: 4s;">💎</span>
-            <span class="emoji-float" style="left: 95%; animation-delay: 5s;">✨</span>
+            <span class="confetti-static" style="left: 5%; animation-delay: 0s;">💎</span>
+            <span class="confetti-static" style="left: 20%; animation-delay: 1s;">✨</span>
+            <span class="confetti-static" style="left: 40%; animation-delay: 2s;">💎</span>
+            <span class="confetti-static" style="left: 60%; animation-delay: 3s;">⭐</span>
+            <span class="confetti-static" style="left: 80%; animation-delay: 4s;">💎</span>
+            <span class="confetti-static" style="left: 95%; animation-delay: 5s;">✨</span>
         </div>
         
         <!-- Main Content -->
         <div class="slide-content" style="position: relative; z-index: 2; padding-top: 5rem; padding-bottom: 3rem; min-height: 100vh;">
             <!-- TikTok Live Badge -->
-            <div class="fade-in" style="margin-bottom: 2rem;">
+            <div data-aos="fade-in" style="margin-bottom: 2rem;">
                 <div style="display: inline-flex; align-items: center; gap: 1rem;">
                     <!-- TikTok Logo -->
                     <img src="../Recursos/logo-tiktok/icono tiktok transparente.png" alt="TikTok" style="width: 60px; height: 60px; filter: drop-shadow(0 0 10px rgba(255,255,255,0.3));">
@@ -69,14 +72,14 @@
             </div>
             
             <!-- Main Title -->
-            <h1 class="fade-in-up delay-2" style="font-size: 3.5rem; line-height: 1.3;">
+            <h1 data-aos="fade-up" data-aos-delay="200" style="font-size: 3.5rem; line-height: 1.3;">
                 Entre más <span class="gradient-text">diamantes</span><br>
                 acumules, más <span class="text-gold">ganas</span>
                 <span class="emoji-pulse" style="font-size: 2.5rem;">✨</span>
             </h1>
             
             <!-- NEW: Level Integration Message -->
-            <div class="fade-in delay-3" style="margin: 2rem 0;">
+            <div class="fade-in" data-aos-delay="300" style="margin: 2rem 0;">
                 <p style="font-size: 1.5rem; font-weight: 600;">
                     <span class="text-cyan">NUEVA FÓRMULA:</span>
                 </p>
@@ -95,13 +98,13 @@
             </div>
             
             <!-- Diamond Display -->
-            <div class="diamond-container fade-in delay-4" style="margin: 3rem auto; text-align: center;">
+            <div class="diamond-container fade-in" data-aos-delay="400" style="margin: 3rem auto; text-align: center;">
                 <div class="diamond-emoji-wrapper" style="position: relative; display: inline-block;">
                     <!-- Main Diamond Emoji -->
                     <div class="diamond-emoji" style="
                         font-size: 12rem;
                         line-height: 1;
-                        animation: pulse 2s infinite, float 4s ease-in-out infinite;
+                        animation: pulse 2s infinite; /* Removed float for performance */
                         filter: drop-shadow(0 0 30px rgba(0, 242, 234, 0.8));
                         text-shadow: 0 0 40px rgba(0, 242, 234, 0.6);
                     ">
@@ -111,8 +114,8 @@
                     <!-- Level Indicators Around Diamond -->
                     <div style="position: absolute; top: 50%; left: -80px; transform: translateY(-50%);">
                         <div class="level-indicator" style="
-                            background: rgba(253, 184, 19, 0.2);
-                            border: 2px solid #FDB813;
+                            background: rgba(192, 192, 192, 0.2);
+                            border: 2px solid #C0C0C0;
                             padding: 0.5rem 1rem;
                             border-radius: 10px;
                             font-weight: 700;
@@ -123,8 +126,8 @@
                     </div>
                     <div style="position: absolute; top: 50%; right: -80px; transform: translateY(-50%);">
                         <div class="level-indicator" style="
-                            background: linear-gradient(135deg, rgba(192, 192, 192, 0.3), rgba(255, 255, 255, 0.1));
-                            border: 2px solid #C0C0C0;
+                            background: linear-gradient(135deg, rgba(253, 184, 19, 0.3), rgba(255, 215, 0, 0.1));
+                            border: 2px solid #FDB813;
                             padding: 0.5rem 1rem;
                             border-radius: 10px;
                             font-weight: 700;
@@ -136,16 +139,16 @@
                     
                     <!-- Sparkle effects around diamond -->
                     <div class="sparkles-around" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none;">
-                        <span style="position: absolute; top: -20px; left: 50%; transform: translateX(-50%); font-size: 2rem; animation: sparkle 2s infinite;">✨</span>
-                        <span style="position: absolute; bottom: -20px; left: 50%; transform: translateX(-50%); font-size: 2rem; animation: sparkle 2s infinite 0.5s;">✨</span>
-                        <span style="position: absolute; top: 50%; left: -30px; transform: translateY(-50%); font-size: 1.5rem; animation: sparkle 2s infinite 1s;">⭐</span>
-                        <span style="position: absolute; top: 50%; right: -30px; transform: translateY(-50%); font-size: 1.5rem; animation: sparkle 2s infinite 1.5s;">⭐</span>
+                        <span style="position: absolute; top: -20px; left: 50%; transform: translateX(-50%); font-size: 2rem; /* animation: sparkle;">✨</span>
+                        <span style="position: absolute; bottom: -20px; left: 50%; transform: translateX(-50%); font-size: 2rem; /* animation: sparkle 0.5s;">✨</span>
+                        <span style="position: absolute; top: 50%; left: -30px; transform: translateY(-50%); font-size: 1.5rem; /* animation: sparkle 1s;">⭐</span>
+                        <span style="position: absolute; top: 50%; right: -30px; transform: translateY(-50%); font-size: 1.5rem; /* animation: sparkle 1.5s;">⭐</span>
                     </div>
                 </div>
             </div>
             
             <!-- Bottom Message -->
-            <div class="fade-in-up delay-5" style="margin-top: 3rem;">
+            <div data-aos="fade-up" data-aos-delay="500" style="margin-top: 3rem;">
                 <div class="glow-box" style="max-width: 700px; margin: 0 auto;">
                     <p style="font-size: 1.3rem; margin: 0;">
                         <span class="text-cyan">💡 Estrategia ganadora:</span> 
@@ -161,7 +164,7 @@
             </div>
             
             <!-- BeeLum Logo -->
-            <div class="fade-in delay-6" style="margin-top: 2rem;">
+            <div class="fade-in" data-aos-delay="600" style="margin-top: 2rem;">
                 <img src="../Recursos/logo-beelum/Logo beelum Letra blanca- para fondos oscuros.png" alt="BeeLum" style="width: 180px;">
             </div>
         </div>
@@ -209,7 +212,7 @@
         
         /* Level Indicators Animation */
         .level-indicator {
-            animation: float 3s ease-in-out infinite;
+            /* animation: float 3s ease-in-out infinite;
         }
         
         @media (max-width: 768px) {
@@ -226,25 +229,30 @@
     <!-- JavaScript -->
     <script src="../js/slide-navigation.js"></script>
     
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    
     <script>
-        // Initialize animations on load
-        window.addEventListener('load', () => {
-            // Add glow effect animation
-            const diamond = document.querySelector('.diamond-emoji');
-            if (diamond) {
-                // Create pulsing glow effect
-                setInterval(() => {
-                    const intensity = Math.random() * 20 + 30;
-                    diamond.style.filter = `drop-shadow(0 0 ${intensity}px rgba(0, 242, 234, 0.8))`;
-                }, 1000);
+        // Initialize AOS with optimized settings
+        AOS.init({
+            duration: 600,
+            easing: 'ease-out-cubic',
+            once: true, // Animation only once for better performance
+            offset: 50,
+            throttleDelay: 99,
+            debounceDelay: 50,
+            disable: function() {
+                return window.innerWidth < 768 && /Android|webOS|iPhone|iPad|iPod/i.test(navigator.userAgent);
             }
-            
-            // Animate level indicators
-            const indicators = document.querySelectorAll('.level-indicator');
-            indicators.forEach((indicator, index) => {
-                indicator.style.animationDelay = `${index * 0.5}s`;
-            });
         });
+        
+        // Remove animations on reduced motion preference
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            document.querySelectorAll('[data-aos]').forEach(el => {
+                el.removeAttribute('data-aos');
+                el.removeAttribute('data-aos-delay');
+            });
+        }
     </script>
 </body>
 </html>
